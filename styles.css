@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0E0E0;
+}
+
+.game {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    overflow: hidden;
+    background-color: #AED6F1;
+}
+
+#character {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url(toad.png); 
+    left: 50%;
+    transform: translateX(-50%);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#character.jumping {
+    background-image: url(toad_jump.png); 
+}
+
+
+/* ... (Le reste du code reste inchangé) ... */
+
+#lives {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+}
+
+.life {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+/* ... (Le reste du code reste inchangé) ... */
+
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    left: 200px; /* Tu peux ajuster cette position */
+    width: 30px;
+    height: 30px;
+    background-color: #8E44AD;
+}
